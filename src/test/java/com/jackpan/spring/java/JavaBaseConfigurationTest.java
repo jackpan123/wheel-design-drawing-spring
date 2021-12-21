@@ -25,4 +25,13 @@ public class JavaBaseConfigurationTest {
         StuffService stuffService = ctx.getBean("stuffService", StuffService.class);
         stuffService.doStuff();
     }
+
+    @Test
+    public void componentScan() {
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+        ctx.scan("com.jackpan");
+        ctx.refresh();
+        MyService myService = ctx.getBean("myService", MyService.class);
+        myService.introduce();
+    }
 }
