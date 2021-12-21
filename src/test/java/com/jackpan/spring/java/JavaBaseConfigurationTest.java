@@ -2,6 +2,8 @@ package com.jackpan.spring.java;
 
 import com.jackpan.spring.configuration.java.AppConfig;
 import com.jackpan.spring.configuration.java.MyService;
+import com.jackpan.spring.configuration.java.OtherConfig;
+import com.jackpan.spring.configuration.java.StuffService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -13,5 +15,14 @@ public class JavaBaseConfigurationTest {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         MyService myService = ctx.getBean("myService", MyService.class);
         myService.introduce();
+    }
+
+    @Test
+    public void buildContainerByRegister() {
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+        ctx.register(AppConfig.class, OtherConfig.class);
+        ctx.refresh();
+        StuffService stuffService = ctx.getBean("stuffService", StuffService.class);
+        stuffService.doStuff();
     }
 }
