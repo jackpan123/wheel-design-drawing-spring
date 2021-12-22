@@ -1,6 +1,8 @@
 package com.jackpan.spring.bean.configuration;
 
 import com.jackpan.spring.bean.configuration.declarebean.TransferServiceImpl;
+import com.jackpan.spring.bean.configuration.methodinjectionn.CommandManager;
+import com.jackpan.spring.bean.configuration.methodinjectionn.MethodInjectionConfig;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -57,5 +59,14 @@ public class JavaBaseConfigurationTest {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         MyService myService = ctx.getBean("myService", MyService.class);
         myService.introduce();
+    }
+
+    @Test
+    public void methodInjectionTest() {
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(MethodInjectionConfig.class);
+        CommandManager commandManager = ctx.getBean("commandManager", CommandManager.class);
+        commandManager.process(new Object());
+        commandManager.process(new Object());
+
     }
 }
