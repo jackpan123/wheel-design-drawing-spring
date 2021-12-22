@@ -32,6 +32,7 @@ public class JavaBaseConfigurationTest {
         ctx.refresh();
         MyService myService = ctx.getBean("myService", MyService.class);
         myService.introduce();
+
     }
 
     @Test
@@ -67,6 +68,12 @@ public class JavaBaseConfigurationTest {
         CommandManager commandManager = ctx.getBean("commandManager", CommandManager.class);
         commandManager.process(new Object());
         commandManager.process(new Object());
+    }
 
+    @Test
+    public void importConfig() {
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(MethodInjectionConfig.class);
+        MyService myService = ctx.getBean("myService", MyService.class);
+        myService.introduce();
     }
 }

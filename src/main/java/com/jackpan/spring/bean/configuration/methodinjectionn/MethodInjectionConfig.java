@@ -1,10 +1,13 @@
 package com.jackpan.spring.bean.configuration.methodinjectionn;
 
+import com.jackpan.spring.bean.configuration.AppConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
+@Import({AppConfig.class})
 public class MethodInjectionConfig {
 
     @Bean
