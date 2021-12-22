@@ -1,4 +1,4 @@
-package com.jackpan.spring.configuration.java;
+package com.jackpan.spring.bean.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

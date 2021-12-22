@@ -1,8 +1,8 @@
-package com.jackpan.spring.configuration.java;
+package com.jackpan.spring.bean.configuration;
 
-import com.jackpan.spring.configuration.java.declarebean.BaseConfig;
-import com.jackpan.spring.configuration.java.declarebean.TransferServiceImpl;
-import com.jackpan.spring.configuration.java.impl.MyServiceImpl;
+import com.jackpan.spring.bean.configuration.declarebean.BaseConfig;
+import com.jackpan.spring.bean.configuration.declarebean.TransferServiceImpl;
+import com.jackpan.spring.bean.configuration.impl.MyServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

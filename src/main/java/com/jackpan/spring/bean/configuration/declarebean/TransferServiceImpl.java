@@ -1,6 +1,6 @@
-package com.jackpan.spring.configuration.java.declarebean;
+package com.jackpan.spring.bean.configuration.declarebean;
 
-import com.jackpan.spring.configuration.java.MyService;
+import com.jackpan.spring.bean.configuration.MyService;
 
 public class TransferServiceImpl {
 

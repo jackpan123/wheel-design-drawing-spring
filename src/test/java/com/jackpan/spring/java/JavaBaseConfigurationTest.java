@@ -1,10 +1,10 @@
 package com.jackpan.spring.java;
 
-import com.jackpan.spring.configuration.java.AppConfig;
-import com.jackpan.spring.configuration.java.MyService;
-import com.jackpan.spring.configuration.java.OtherConfig;
-import com.jackpan.spring.configuration.java.StuffService;
-import com.jackpan.spring.configuration.java.declarebean.TransferServiceImpl;
+import com.jackpan.spring.bean.configuration.AppConfig;
+import com.jackpan.spring.bean.configuration.MyService;
+import com.jackpan.spring.bean.configuration.OtherConfig;
+import com.jackpan.spring.bean.configuration.StuffService;
+import com.jackpan.spring.bean.configuration.declarebean.TransferServiceImpl;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

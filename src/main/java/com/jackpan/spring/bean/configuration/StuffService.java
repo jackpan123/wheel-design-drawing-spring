@@ -1,4 +1,4 @@
-package com.jackpan.spring.configuration.java;
+package com.jackpan.spring.bean.configuration;
 
 public class StuffService {
 

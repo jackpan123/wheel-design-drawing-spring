@@ -1,4 +1,4 @@
-package com.jackpan.spring.configuration.java.declarebean;
+package com.jackpan.spring.bean.configuration.declarebean;
 
 import org.springframework.context.annotation.Bean;
 
