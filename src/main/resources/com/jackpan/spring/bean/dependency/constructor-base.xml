@@ -20,4 +20,9 @@
         <constructor-arg index="0" value="750001"/>
         <constructor-arg index="1" value="43"/>
     </bean>
+
+    <bean id="exampleBean2" class="com.jackpan.spring.bean.dependency.ExampleBean">
+        <constructor-arg name="years" value="750001"/>
+        <constructor-arg name="ultimateAnswer" value="43"/>
+    </bean>
 </beans>
