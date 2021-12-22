@@ -8,8 +8,8 @@
         <constructor-arg ref="beanTwo"/>
         <constructor-arg ref="beanThree"/>
     </bean>
-    <bean id="beanTwo" class="com.jackpan.spring.bean.dependency.ThingTwo"></bean>
-    <bean id="beanThree" class="com.jackpan.spring.bean.dependency.ThingThree"></bean>
+    <bean id="beanTwo" class="com.jackpan.spring.bean.dependency.ThingTwo"/>
+    <bean id="beanThree" class="com.jackpan.spring.bean.dependency.ThingThree"/>
 
     <bean id="exampleBean" class="com.jackpan.spring.bean.dependency.ExampleBean">
         <constructor-arg type="int" value="750000"/>

@@ -11,3 +11,21 @@ JavaBaseConfigurationTest.multipleDeclareBean()
 ```
 JavaBaseConfigurationTest.beanDependencies()
 ```
+
+Constructor method dependency injection
+```
+BeanDependencyInjectionConstructorBaseTest.noExplicitlyDependencyInjection()
+BeanDependencyInjectionConstructorBaseTest.argumentTypeMatching()
+BeanDependencyInjectionConstructorBaseTest.argumentIndexMatching()
+BeanDependencyInjectionConstructorBaseTest.argumentNameMatching()
+```
+
+Setter method dependency injection
+```
+BeanDependencyInjectionConstructorBaseTest.setterMethodDependency()
+```
+
+Factory method dependency injection
+```
+BeanDependencyInjectionConstructorBaseTest.factoryMethodDependency()
+```
