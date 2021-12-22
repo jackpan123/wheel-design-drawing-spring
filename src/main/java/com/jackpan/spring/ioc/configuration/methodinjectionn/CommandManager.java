@@ -1,4 +1,4 @@
-package com.jackpan.spring.bean.configuration.methodinjectionn;
+package com.jackpan.spring.ioc.configuration.methodinjectionn;
 
 public abstract class CommandManager {
     public Object process(Object commandState) {

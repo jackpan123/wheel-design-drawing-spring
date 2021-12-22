@@ -1,6 +1,6 @@
-package com.jackpan.spring.bean.configuration.methodinjectionn;
+package com.jackpan.spring.ioc.configuration.methodinjectionn;
 
-import com.jackpan.spring.bean.configuration.AppConfig;
+import com.jackpan.spring.ioc.configuration.AppConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

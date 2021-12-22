@@ -4,24 +4,24 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="beanOne" class="com.jackpan.spring.bean.dependency.ThingOne">
+    <bean id="beanOne" class="com.jackpan.spring.ioc.dependency.ThingOne">
         <constructor-arg ref="beanTwo"/>
         <constructor-arg ref="beanThree"/>
     </bean>
-    <bean id="beanTwo" class="com.jackpan.spring.bean.dependency.ThingTwo"/>
-    <bean id="beanThree" class="com.jackpan.spring.bean.dependency.ThingThree"/>
+    <bean id="beanTwo" class="com.jackpan.spring.ioc.dependency.ThingTwo"/>
+    <bean id="beanThree" class="com.jackpan.spring.ioc.dependency.ThingThree"/>
 
-    <bean id="exampleBean" class="com.jackpan.spring.bean.dependency.ExampleBean">
+    <bean id="exampleBean" class="com.jackpan.spring.ioc.dependency.ExampleBean">
         <constructor-arg type="int" value="750000"/>
         <constructor-arg type="java.lang.String" value="42"/>
     </bean>
 
-    <bean id="exampleBean1" class="com.jackpan.spring.bean.dependency.ExampleBean">
+    <bean id="exampleBean1" class="com.jackpan.spring.ioc.dependency.ExampleBean">
         <constructor-arg index="0" value="750001"/>
         <constructor-arg index="1" value="43"/>
     </bean>
 
-    <bean id="exampleBean2" class="com.jackpan.spring.bean.dependency.ExampleBean">
+    <bean id="exampleBean2" class="com.jackpan.spring.ioc.dependency.ExampleBean">
         <constructor-arg name="years" value="750001"/>
         <constructor-arg name="ultimateAnswer" value="43"/>
 
@@ -30,10 +30,10 @@
         <property name="integerProperty" value="1"/>
     </bean>
 
-    <bean id="anotherExampleBean" class="com.jackpan.spring.bean.dependency.AnotherBean"/>
-    <bean id="yetAnthoerBean" class="com.jackpan.spring.bean.dependency.YetAnthoerBean"/>
+    <bean id="anotherExampleBean" class="com.jackpan.spring.ioc.dependency.AnotherBean"/>
+    <bean id="yetAnthoerBean" class="com.jackpan.spring.ioc.dependency.YetAnthoerBean"/>
 
-    <bean id="exampleBean3" class="com.jackpan.spring.bean.dependency.ExampleBean" factory-method="createInstance">
+    <bean id="exampleBean3" class="com.jackpan.spring.ioc.dependency.ExampleBean" factory-method="createInstance">
         <constructor-arg name="anotherBean" ref="anotherExampleBean"/>
         <constructor-arg name="yetAnthoerBean" ref="yetAnthoerBean"/>
         <constructor-arg value="1"/>

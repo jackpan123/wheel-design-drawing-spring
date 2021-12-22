@@ -1,6 +1,4 @@
-package com.jackpan.spring.bean.dependency;
-
-import org.springframework.beans.factory.annotation.Autowired;
+package com.jackpan.spring.ioc.dependency;
 
 public class ExampleBean {
 

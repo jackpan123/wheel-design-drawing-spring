@@ -1,8 +1,8 @@
-package com.jackpan.spring.bean.configuration;
+package com.jackpan.spring.ioc.configuration;
 
-import com.jackpan.spring.bean.configuration.declarebean.TransferServiceImpl;
-import com.jackpan.spring.bean.configuration.methodinjectionn.CommandManager;
-import com.jackpan.spring.bean.configuration.methodinjectionn.MethodInjectionConfig;
+import com.jackpan.spring.ioc.configuration.declarebean.TransferServiceImpl;
+import com.jackpan.spring.ioc.configuration.methodinjectionn.CommandManager;
+import com.jackpan.spring.ioc.configuration.methodinjectionn.MethodInjectionConfig;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

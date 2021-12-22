@@ -1,4 +1,4 @@
-package com.jackpan.spring.bean.configuration;
+package com.jackpan.spring.ioc.configuration;
 
 
 public interface MyService {

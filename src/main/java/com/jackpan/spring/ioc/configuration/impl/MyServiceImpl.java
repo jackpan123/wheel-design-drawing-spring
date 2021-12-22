@@ -1,6 +1,6 @@
-package com.jackpan.spring.bean.configuration.impl;
+package com.jackpan.spring.ioc.configuration.impl;
 
-import com.jackpan.spring.bean.configuration.MyService;
+import com.jackpan.spring.ioc.configuration.MyService;
 
 public class MyServiceImpl implements MyService {
     @Override

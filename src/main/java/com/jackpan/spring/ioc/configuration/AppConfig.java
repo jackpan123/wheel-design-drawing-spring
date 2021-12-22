@@ -1,8 +1,8 @@
-package com.jackpan.spring.bean.configuration;
+package com.jackpan.spring.ioc.configuration;
 
-import com.jackpan.spring.bean.configuration.declarebean.BaseConfig;
-import com.jackpan.spring.bean.configuration.declarebean.TransferServiceImpl;
-import com.jackpan.spring.bean.configuration.impl.MyServiceImpl;
+import com.jackpan.spring.ioc.configuration.declarebean.BaseConfig;
+import com.jackpan.spring.ioc.configuration.declarebean.TransferServiceImpl;
+import com.jackpan.spring.ioc.configuration.impl.MyServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

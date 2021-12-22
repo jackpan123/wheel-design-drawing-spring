@@ -1,4 +1,4 @@
-package com.jackpan.spring.bean.dependency;
+package com.jackpan.spring.ioc.dependency;
 
 public class ThingOne {
 
