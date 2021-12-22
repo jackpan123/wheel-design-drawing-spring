@@ -14,4 +14,18 @@ public class BeanDependencyInjectionConstructorBaseTest {
         ThingTwo beanTwo = ctx.getBean("beanTwo", ThingTwo.class);
         ThingThree beanThree = ctx.getBean("beanThree", ThingThree.class);
     }
+
+    @Test
+    public void argumentTypeMatching() {
+        ApplicationContext ctx =
+                new ClassPathXmlApplicationContext("com/jackpan/spring/bean/dependency/constructor-base.xml");
+        ExampleBean exampleBean = ctx.getBean("exampleBean", ExampleBean.class);
+    }
+
+    @Test
+    public void argumentIndexMatching() {
+        ApplicationContext ctx =
+                new ClassPathXmlApplicationContext("com/jackpan/spring/bean/dependency/constructor-base.xml");
+        ExampleBean exampleBean = ctx.getBean("exampleBean1", ExampleBean.class);
+    }
 }
