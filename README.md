@@ -1,7 +1,13 @@
 # wheel-design-drawing-spring
 A wheel design drawing for spring
 
-## Declare bean ways
+## Bean configuration for IoC
+### Declare bean ways
 ```
 JavaBaseConfigurationTest.multipleDeclareBean()
+```
+
+### Bean dependencies
+```
+JavaBaseConfigurationTest.beanDependencies()
 ```

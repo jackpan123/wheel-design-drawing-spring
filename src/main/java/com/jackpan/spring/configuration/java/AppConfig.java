@@ -1,6 +1,7 @@
 package com.jackpan.spring.configuration.java;
 
 import com.jackpan.spring.configuration.java.declarebean.BaseConfig;
+import com.jackpan.spring.configuration.java.declarebean.TransferServiceImpl;
 import com.jackpan.spring.configuration.java.impl.MyServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,5 +14,12 @@ public class AppConfig implements BaseConfig {
     @Bean
     public MyService myService() {
         return new MyServiceImpl();
+    }
+
+    @Bean
+    public TransferServiceImpl transferService1(MyService myService) {
+        TransferServiceImpl transferService = new TransferServiceImpl();
+        transferService.setMyService(myService);
+        return transferService;
     }
 }
