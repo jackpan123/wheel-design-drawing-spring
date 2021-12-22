@@ -24,5 +24,18 @@
     <bean id="exampleBean2" class="com.jackpan.spring.bean.dependency.ExampleBean">
         <constructor-arg name="years" value="750001"/>
         <constructor-arg name="ultimateAnswer" value="43"/>
+
+        <property name="anotherBean" ref="anotherExampleBean"/>
+        <property name="yetAnthoerBean" ref="yetAnthoerBean"/>
+        <property name="integerProperty" value="1"/>
+    </bean>
+
+    <bean id="anotherExampleBean" class="com.jackpan.spring.bean.dependency.AnotherBean"/>
+    <bean id="yetAnthoerBean" class="com.jackpan.spring.bean.dependency.YetAnthoerBean"/>
+
+    <bean id="exampleBean3" class="com.jackpan.spring.bean.dependency.ExampleBean" factory-method="createInstance">
+        <constructor-arg name="anotherBean" ref="anotherExampleBean"/>
+        <constructor-arg name="yetAnthoerBean" ref="yetAnthoerBean"/>
+        <constructor-arg value="1"/>
     </bean>
 </beans>

@@ -35,4 +35,11 @@ public class BeanDependencyInjectionConstructorBaseTest {
                 new ClassPathXmlApplicationContext("com/jackpan/spring/bean/dependency/constructor-base.xml");
         ExampleBean exampleBean = ctx.getBean("exampleBean2", ExampleBean.class);
     }
+
+    @Test
+    public void setterMethodDependency() {
+        ApplicationContext ctx =
+                new ClassPathXmlApplicationContext("com/jackpan/spring/bean/dependency/constructor-base.xml");
+        ExampleBean exampleBean = ctx.getBean("exampleBean2", ExampleBean.class);
+    }
 }
