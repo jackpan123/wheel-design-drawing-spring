@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.jackpan")
 public class AppConfig implements BaseConfig {
 
-    @Bean
+    @Bean(initMethod = "init", destroyMethod = "cleanup")
     public MyService myService() {
         return new MyServiceImpl();
     }

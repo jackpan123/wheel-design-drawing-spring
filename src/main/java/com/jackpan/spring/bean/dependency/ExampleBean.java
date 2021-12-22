@@ -1,5 +1,7 @@
 package com.jackpan.spring.bean.dependency;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class ExampleBean {
 
     // Number of years to calculate the Ultimate Answer

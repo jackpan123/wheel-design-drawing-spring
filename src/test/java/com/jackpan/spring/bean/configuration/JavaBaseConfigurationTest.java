@@ -50,7 +50,12 @@ public class JavaBaseConfigurationTest {
         // Get MyService bean dependency.
         TransferServiceImpl transferServiceImpl1 = ctx.getBean("transferService1", TransferServiceImpl.class);
         transferServiceImpl1.doMyServiceMethod();
+    }
 
-
+    @Test
+    public void beanInitMethodAndDestroyMethod() {
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
+        MyService myService = ctx.getBean("myService", MyService.class);
+        myService.introduce();
     }
 }
