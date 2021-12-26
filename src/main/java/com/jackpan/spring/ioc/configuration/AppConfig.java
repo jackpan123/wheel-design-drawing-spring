@@ -12,14 +12,14 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig implements BaseConfig {
 
     @Bean(initMethod = "init", destroyMethod = "cleanup")
-    public MyService myService() {
+    public MyServiceImpl myService() {
         return new MyServiceImpl();
     }
 
-    @Bean
-    public TransferServiceImpl transferService1(MyService myService) {
-        TransferServiceImpl transferService = new TransferServiceImpl();
-        transferService.setMyService(myService);
-        return transferService;
-    }
+//    @Bean
+//    public TransferServiceImpl transferService1(MyService myService) {
+//        TransferServiceImpl transferService = new TransferServiceImpl();
+//        transferService.setMyService(myService);
+//        return transferService;
+//    }
 }
